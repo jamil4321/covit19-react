@@ -3,12 +3,9 @@ body{
 }
 
 .container{
-  width:90%;
+  margin-left:-10px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-img{
-  margin-top: 3%;
 }
