@@ -3,8 +3,10 @@
     justify-content: center;
     width: 85%;
 }
-.newContainer{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+
+@media all and (min-width: 800px){
+    .container{
+        display: block;
+        width:100%
+    }
 }
