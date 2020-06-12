@@ -13,11 +13,16 @@ const CountryList = ({handleCountryName}) => {
         fetchApi()
     }, [setFetchCountryList])
     return (
-        <FormControl>
-            <NativeSelect defaultValue="" onChange={e =>handleCountryName(e.target.value)}>
-                {fetchedCountryList.map((data, i) => <option key={i} value={data.country}>{data.country}</option>)}
+       <div>
+           <h3>Select Country Name</h3>
+            <FormControl>
+            <NativeSelect defaultValue="world" onChange={e =>handleCountryName(e.target.value)}>
+                {
+                fetchedCountryList.map((data, i) => <option key={i} value={data.country}>{data.country}</option>)
+                }
             </NativeSelect>
         </FormControl>
+       </div>
     )
 }
 export default CountryList;

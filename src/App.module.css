@@ -3,7 +3,6 @@ body{
 }
 
 .container{
-  margin-right:-10px;
   display: flex;
   justify-content: center;
   align-items: center;

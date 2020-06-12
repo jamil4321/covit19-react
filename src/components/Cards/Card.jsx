@@ -55,6 +55,28 @@ const Cards = ({ data, country }) => {
                         <Typography variant="body2">Number of Active cases of COVID-19</Typography>
                       </CardContent>
                   </Grid>
+                  <Grid item component={Card} xs={12} md={5}className={cx(styles.card, styles.infected)}>
+                      <CardContent>
+                          <Typography color="textSecondary" gutterBottom>
+                                Today Cases
+                          </Typography>
+                          <Typography variant="h5">
+                        <Countup start={0} end={data.todayCases} duration={2.5} separator=","/>
+                        </Typography>
+                        <Typography variant="body2">Number of Active cases of COVID-19</Typography>
+                      </CardContent>
+                  </Grid>
+                  <Grid item component={Card} xs={12} md={5}className={cx(styles.card, styles.deaths)}>
+                      <CardContent>
+                          <Typography color="textSecondary" gutterBottom>
+                               Today Death
+                          </Typography>
+                          <Typography variant="h5">
+                        <Countup start={0} end={data.todayDeaths} duration={2.5} separator=","/>
+                        </Typography>
+                        <Typography variant="body2">Number of Active cases of COVID-19</Typography>
+                      </CardContent>
+                  </Grid>
                   
             </Grid>
         </div>
